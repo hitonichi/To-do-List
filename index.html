@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>To-do List</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>TO-DO LIST</h1>
+		</header>
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Details</th>
+				<th>Due</th>
+				<th>Done</th>
+			</tr>
+			<tr>
+				<td>Exercise</td>
+				<td>Daily jog around the neighborhood</td>
+				<td>N/A</td>
+				<td><input type="checkbox" /></td>
+			</tr>
+			<tr>
+				<td>Learn JavaScript</td>
+				<td>Learn basic JS syntax</td>
+				<td><time datetime="2022-07-01">01/07/2022</time></td>
+				<td><input type="checkbox" /></td>
+			</tr>
+			<tr>
+				<td>Personal project</td>
+				<td>Take care of the finishing touch for the To-do List website</td>
+				<td><time datetime="2022-07-30">30/07/2022</time></td>
+				<td><input type="checkbox" checked /></td>
+			</tr>
+		</table>
+
+		<div class="add">
+			<h2>Add New To-Do</h2>
+			<form>
+				<div class="tableRow">
+					<label for="name">Name:</label>
+					<input
+						type="text"
+						name="name"
+						value=""
+						placeholder="What's the task's name?"
+						required
+					/>
+				</div>
+				<div class="tableRow">
+					<label for="detail">Details:</label>
+					<textarea name="detail" placeholder="What's the task specifically?"></textarea>
+				</div>
+				<div class="tableRow">
+					<label for="Due">Due:</label>
+					<input type="date" name="due" value="" />
+				</div>
+				<div class="tableRow">
+					<p></p>
+					<input type="submit" value="Add" />
+				</div>
+			</form>
+		</div>
+		<footer>
+			<p>
+				Created by T.N.D.<br />
+				&copy 2022-2022. All rights reserved
+			</p>
+		</footer>
+	</body>
+</html>
